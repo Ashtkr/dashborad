@@ -1,0 +1,22 @@
+.header__menu{
+    padding: 10px;
+    background: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #d2d2d2;
+}
+
+#dropdown-basic-button{
+    background-color: white;
+    color: black;
+    border: none;
+}
+.header__leftMenu{
+    display: flex;
+    align-items: center;
+}
+
+.header__leftMenu > div{
+    margin: 0px 10px;
+}

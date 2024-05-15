@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import AppLayout from "./components/layout/AppLayout";
+import Blank from "./pages/Blank";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<AppLayout />}>
+          <Route index element={<Blank />} />
+          <Route path="/assets" element={<Blank />} />
+          <Route path="/analysis" element={<Blank />} />
+          <Route path="/jobs" element={<Blank />} />
+          <Route path="/reports" element={<Blank />} />
+          <Route path="/transfers" element={<Blank />} />
+          <Route path="/projects" element={<Blank />} />
+          <Route path="/settings" element={<Blank />} />
+          <Route path="/support" element={<Blank />} />
+          <Route path="/feedback" element={<Blank />} />
+          <Route path="/raiseTicket" element={<Blank />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

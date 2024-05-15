@@ -1,0 +1,27 @@
+.appLayout__header{
+    padding: 0px 0px 0px 320px;
+}
+
+@media only screen and (max-width: 600px) {
+    .appLayout__header{
+        padding: 0;
+    }
+  }
+
+.sidebar__floatingMenu{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #1f2539;
+    color: white;
+}
+
+@media only screen and (min-width: 600px) {
+    .sidebar__floatingMenu{
+          display: none;
+    }
+  }
