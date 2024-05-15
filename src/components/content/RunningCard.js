@@ -1,7 +1,7 @@
 import React from "react";
 import "./runningCard.css";
 
-const RunningCard = ({ details = { details } }) => {
+const RunningCard = ({ details = {} }) => {
   return (
     <div className="runningCard__Menu">
       <div className="runningCard__MenuHeader">

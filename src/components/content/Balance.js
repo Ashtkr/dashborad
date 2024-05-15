@@ -1,6 +1,4 @@
-import { height } from "@mui/system";
 import React from "react";
-import { MdHeight } from "react-icons/md";
 
 const cardStyle = {
   padding: "20px",
